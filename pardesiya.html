@@ -79,15 +79,68 @@
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "הפעלות ימי הולדת לילדים בפרדסיה",
-            "itemListElement": [{
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "מופע יום הולדת לילדים בפרדסיה - המזוודה הסודית",
-                    "description": "מופע קומדיה אינטראקטיבי ומצחיק לילדים בגילאי 4-10. הפעלה ליום הולדת עד הבית בפרדסיה."
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "מופע יום הולדת לילדים בפרדסיה - המזוודה הסודית",
+                        "description": "מופע קומדיה אינטראקטיבי ומצחיק לילדים בגילאי 4-10. הפעלה ליום הולדת עד הבית בפרדסיה."
+                    }
                 }
-            }]
-        }
+            ]
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "60",
+            "bestRating": "5",
+            "worstRating": "5"
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                },
+                "author": {
+                    "@type": "Person",
+                    "name": "מאיה ל., פרדסיה"
+                },
+                "reviewBody": "הילדים בכלל לא רצו שהמופע ייגמר. מומלץ!",
+                "datePublished": "2026-03-15"
+            },
+            {
+                "@type": "Review",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                },
+                "author": {
+                    "@type": "Person",
+                    "name": "ליאור צ., פרדסיה"
+                },
+                "reviewBody": "איתמר התאים את עצמו בדיוק לאופי הקבוצה. מקצוען.",
+                "datePublished": "2026-03-15"
+            },
+            {
+                "@type": "Review",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                },
+                "author": {
+                    "@type": "Person",
+                    "name": "דנית פ., פרדסיה"
+                },
+                "reviewBody": "מופע מצחיק שגם ההורים נהנו ממנו.",
+                "datePublished": "2026-03-15"
+            }
+        ]
     }
     </script>
 
@@ -110,6 +163,28 @@
             }
         ]
     }
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "איתמר המפוזר",
+    "alternateName": "איתמר",
+    "jobTitle": "שחקן ומפעיל ימי הולדת לילדים",
+    "description": "שחקן מקצועי, בוגר בית הספר למשחק של יורם לוינשטיין. מציג את מופע 'המזוודה הסודית' לילדים בגילאי 4-10. מגיע עד הבית באזור המרכז והשפלה.",
+    "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "בית הספר למשחק של יורם לוינשטיין"
+    },
+    "image": "https://barni.fun/itamar-mic.jpeg",
+    "url": "https://barni.fun/",
+    "worksFor": {
+        "@type": "Organization",
+        "name": "ברני אירועים",
+        "alternateName": "Barni Productions",
+        "url": "https://barni.fun/"
+    }
+}
     </script>
 
 
@@ -610,7 +685,24 @@
                 text-align: center;
             }
         }
-    </style>
+    
+        /* === BREADCRUMBS === */
+        .breadcrumbs {
+            background: var(--gray-light);
+            padding: 8px 20px;
+            font-size: 0.85rem;
+            color: var(--gray);
+            text-align: right;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        .breadcrumbs a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .breadcrumbs a:hover { text-decoration: underline; }
+        .breadcrumbs .sep { margin: 0 6px; opacity: 0.5; }
+</style>
     <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
@@ -634,6 +726,12 @@
         <a href="index.html" style="display:inline-flex;flex-direction:column;line-height:1.1;text-decoration:none;"><span style="display:block;font-family:Heebo,sans-serif;font-size:0.7rem;font-weight:400;opacity:0.75;letter-spacing:0.04em;margin-bottom:2px;line-height:1.1;">ברני אירועים מציגים</span><span>המזוודה הסודית 🧳</span></a>
         <a href="index.html" class="back-link">&#8592; חזרה לעמוד הראשי</a>
     </nav>
+    <nav class="breadcrumbs" aria-label="ניווט פירורי לחם">
+        <a href="index.html">דף הבית</a>
+        <span class="sep">›</span>
+        <span aria-current="page">הפעלה ליום הולדת בפרדסיה</span>
+    </nav>
+
 
     <section class="hero">
         <div class="hero-content">

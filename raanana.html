@@ -83,15 +83,54 @@
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "הפעלות ימי הולדת לילדים ברעננה",
-            "itemListElement": [{
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "מופע יום הולדת לילדים ברעננה - המזוודה הסודית",
-                    "description": "מופע קומדיה אינטראקטיבי ומצחיק לילדים בגילאי 4-10 ברעננה. הפעלה ליום הולדת עד הבית."
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "מופע יום הולדת לילדים ברעננה - המזוודה הסודית",
+                        "description": "מופע קומדיה אינטראקטיבי ומצחיק לילדים בגילאי 4-10 ברעננה. הפעלה ליום הולדת עד הבית."
+                    }
                 }
-            }]
-        }
+            ]
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "60",
+            "bestRating": "5",
+            "worstRating": "5"
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                },
+                "author": {
+                    "@type": "Person",
+                    "name": "מיכל ר."
+                },
+                "reviewBody": "הילדים לא הפסיקו לצחוק. גם שבוע אחרי הם עדיין מדברים על המזוודה הסודית. איתמר פשוט גנב את ההצגה!",
+                "datePublished": "2026-03-15"
+            },
+            {
+                "@type": "Review",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                },
+                "author": {
+                    "@type": "Person",
+                    "name": "דנה ל."
+                },
+                "reviewBody": "חיפשנו משהו מיוחד ולא סתם עוד הפעלה. הילדים היו מרותקים מהרגע הראשון ואנחנו סוף סוף ישבנו בצד בשקט. ממליצה!",
+                "datePublished": "2026-03-15"
+            }
+        ]
     }
     </script>
 
@@ -114,6 +153,28 @@
             }
         ]
     }
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "איתמר המפוזר",
+    "alternateName": "איתמר",
+    "jobTitle": "שחקן ומפעיל ימי הולדת לילדים",
+    "description": "שחקן מקצועי, בוגר בית הספר למשחק של יורם לוינשטיין. מציג את מופע 'המזוודה הסודית' לילדים בגילאי 4-10. מגיע עד הבית באזור המרכז והשפלה.",
+    "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "בית הספר למשחק של יורם לוינשטיין"
+    },
+    "image": "https://barni.fun/itamar-mic.jpeg",
+    "url": "https://barni.fun/",
+    "worksFor": {
+        "@type": "Organization",
+        "name": "ברני אירועים",
+        "alternateName": "Barni Productions",
+        "url": "https://barni.fun/"
+    }
+}
     </script>
 
 
@@ -782,7 +843,24 @@
             opacity: 1;
             transform: translateY(0);
         }
-    </style>
+    
+        /* === BREADCRUMBS === */
+        .breadcrumbs {
+            background: var(--gray-light);
+            padding: 8px 20px;
+            font-size: 0.85rem;
+            color: var(--gray);
+            text-align: right;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        .breadcrumbs a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .breadcrumbs a:hover { text-decoration: underline; }
+        .breadcrumbs .sep { margin: 0 6px; opacity: 0.5; }
+</style>
     <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
@@ -808,6 +886,12 @@
             <a href="index.html" class="nav-brand" style="display:inline-flex;flex-direction:column;line-height:1.1;text-decoration:none;"><span style="display:block;font-family:Heebo,sans-serif;font-size:0.7rem;font-weight:400;opacity:0.75;letter-spacing:0.04em;margin-bottom:2px;line-height:1.1;">ברני אירועים מציגים</span><span>המזוודה הסודית 🧳</span></a>
             <a href="index.html">&#8592; &#1495;&#1494;&#1512;&#1492; &#1500;&#1506;&#1502;&#1493;&#1491; &#1492;&#1512;&#1488;&#1513;&#1497;</a>
         </nav>
+    <nav class="breadcrumbs" aria-label="ניווט פירורי לחם">
+        <a href="index.html">דף הבית</a>
+        <span class="sep">›</span>
+        <span aria-current="page">הפעלה ליום הולדת ברעננה</span>
+    </nav>
+
 
         <div class="floating-elements">
             <div class="float-item">&#127881;</div>
