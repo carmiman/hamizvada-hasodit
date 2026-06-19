@@ -1818,9 +1818,12 @@
             .hero {
                 padding: 80px 16px 100px;
                 min-height: auto;
-                background-image: image-set(url('hero-poster.webp') type('image/webp'), url('hero-poster.jpg') type('image/jpeg'));
+                background-color: #16213E;
+                background-image:
+                    linear-gradient(180deg, rgba(15,20,40,0.78) 0%, rgba(15,20,40,0.55) 45%, rgba(15,20,40,0.85) 100%),
+                    image-set(url('show-kids-hands-up.webp') type('image/webp'), url('show-kids-hands-up.jpeg') type('image/jpeg'));
                 background-size: cover;
-                background-position: center;
+                background-position: center top;
             }
             .hero-video-bg {
                 display: none;
